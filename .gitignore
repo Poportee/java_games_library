@@ -1,0 +1,10 @@
+build
+dist
+
+nbprojectprivate
+nbprojectMakefile-.mk
+nbprojectPackage-.bash
+
+.classpath
+.project
+.settings
