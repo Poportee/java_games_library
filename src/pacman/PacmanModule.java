@@ -11,7 +11,6 @@ public class PacmanModule implements GameModule {
     private BufferedImage captPacman;
     private BufferedImage logoPacman;
 
-    // Le constructeur charge uniquement les images de présentation
     public PacmanModule() {
         try {
             captPacman = ImageIO.read(getClass().getResourceAsStream("/projetfinal/Images/captPacman.png"));
