@@ -135,6 +135,12 @@ public class GamePanel extends JPanel implements Runnable {
         if(keyH.escape){
             stopMusic();
             projetfinal.Menu menu = new projetfinal.Menu(frame);
+    
+            
+            menu.addGame(new pacman.PacmanModule());
+            menu.addGame(new echecs.EchecsModule());
+            menu.addGame(new morpion.MorpionModule());
+            
             frame.setSize(710, 738);
             menu.setSize(700, 700);
             frame.remove(this);

@@ -128,11 +128,19 @@ public class Plateau extends JPanel implements MouseListener, KeyListener{
         //Retour au Menu
         if (code == KeyEvent.VK_ESCAPE){
             projetfinal.Menu menu = new projetfinal.Menu(frame);
+
+            menu.addGame(new pacman.PacmanModule());
+            menu.addGame(new echecs.EchecsModule());
+            menu.addGame(new morpion.MorpionModule());
+
             frame.setSize(710, 738);
             menu.setSize(700, 700);
             frame.remove(this);
             frame.add(menu);
             frame.setLocationRelativeTo(null);
+
+            menu.setFocusable(true);
+            menu.requestFocusInWindow();
         }
     }
 
